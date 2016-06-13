@@ -1,11 +1,5 @@
 #include <assert.h>
 
-template< typename NODE >
-kernel::CMemoryList< NODE >::CMemoryList()
-	: m_pHead( NULL )
-	, m_pTail( NULL )
-	, m_Size( 0 )
-{}
 
 template< typename NODE >
 void kernel::CMemoryList< NODE >::Delete( PNODE pEntry )
