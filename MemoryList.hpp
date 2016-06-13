@@ -39,16 +39,3 @@ void kernel::CMemoryList<NODE>::Clear()
 
 	assert( Size() == m_Size );
 }
-
-template< typename NODE >
-inline DWORD kernel::CMemoryList< NODE >::Size()
-{
-	DWORD Size = 0;
-
-	for ( PNODE pEntry = m_pHead; NULL != pEntry; pEntry = pEntry->Next )
-	{
-		++Size;
-	}
-
-	return Size;
-}
